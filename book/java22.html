@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <!--1. 문법을 먼저 작성하지 않기
+        2. 문제해석
+        3. 반복문 / 조건문(if) / 선택문(switch) 써야하는지 확인-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>java 22</title>
+        <!--응용문제22. 다음 숫자 배열 중 홀수 숫자만 출력합니다.
+            10,20,22,11,3,7,99,52,51,40
+        -->
+        <script>
+            var a = [10,20,22,11,3,7,99,52,51,40];
+            var b = a.length; //갯수 (배열은 무조건 갯수 찍어야함.)
+            var c; //시작값
+            for(c=0;c<b;c++){//노드0부터 //범위
+                var d = a[c] % 2; //배열의 0번째 숫자를 2로 나눴을 때
+                if(d==1){ //홀수
+                    document.write(a[c] + "<br>");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

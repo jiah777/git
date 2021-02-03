@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>HTML&CSS 실무1</title>
+        <style>
+            body{margin: 0; padding: 0;}
+            /*상단*/
+            .main_header {width:100%; height:45px;background: url("./image/header_background.png"); position: relative;}
+            .btn {display:inline-block; background: url("./image/header_left_button.png");
+                width:62px;height: 32px; position:absolute;top:6px;}
+            .menu {display:inline-block; background: url("./image/header_right_button.png");
+                width:32px;height: 32px; position:absolute; right:0;top:6px;cursor: pointer;}
+            .title {width:100px; height:32px; color:white;text-align: center; line-height:32px;
+                position: absolute; left:50%; top:5px; margin-left:-50px;}
+            
+            /*검색*/
+            .search {width: 100%; height: 40px; background-color: gray; padding-top: 4px; 
+                padding-left: 2.5%; box-sizing: border-box; display: none;}
+            .inputs {width: 95%; height: 30px; background-color: white; border: 1px solid black; 
+                text-indent: 5px; line-height: 30px;}
+            #ck {display: none;}
+            #ck:checked + #test > .search {display: block;}
+
+        </style>
+    </head>
+    <body>
+        <input type="checkbox" id="ck">
+        <div id="test">
+            <!--상단-->
+            <div class="main_header">
+                <label class="btn"></label>
+                <label class="title">모바일</label>
+                <label class="menu" for="ck"></label><!--label 에만 for를 쓰는데 ck라는 id를 작동하기 위함.-->
+            </div>
+            <!--검색-->
+            <div class="search">
+                <div class="inputs">검색할 상품명을 입력하세요!</div>
+            </div>
+        </div>
+    
+
+    </body>
+</html>

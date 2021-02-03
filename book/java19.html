@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <!--1. 문법을 먼저 작성하지 않기
+        2. 문제해석
+        3. 반복문 / 조건문(if) / 선택문(switch) 써야하는지 확인-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>java 19</title>
+        <!--응용문제19. 다음 형식의 이미지 처럼 출력하세요.
+            ★
+            2
+            ★★★
+            4
+            ★★★★★
+        -->
+        <script>
+            var a; 
+            var b; 
+            for(a=1;a<6;a++){
+                for(b=0;b<a;b++){
+                    if(a%2==1){ //홀수일때
+                    document.write("★");
+                    }
+                }
+                if(a%2==0){
+                    document.write(a);
+                }
+                document.write("<br>");
+            }
+            /*
+            var a,b,c;
+            for(a=1;a<6;a++){
+                c=a%2;
+                if(c==0){document.write(a);}
+                else {
+                for(b=0;b<a;b++){
+                document.write("★");}
+            }
+            document.write("<br>");
+            }*/
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <!--1. 문법을 먼저 작성하지 않기
+        2. 문제해석
+        3. 반복문 / 조건문(if) / 선택문(switch) 써야하는지 확인-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>java 13</title>
+        <!--
+            while문
+            var a = 0;//while시작값
+            while(종료값){
+                증가 또는 감소
+            }
+
+            do while문
+            do-while 시작값
+            do{
+                증가 또는 감소
+            }while(종료값)
+        -->
+        <!--응용문제13. 해당 for반복문이 있습니다. for > do-while문으로 작성하세요.
+            var a;
+            var b;
+            for(a=10;a<21;a++){   
+                b = 4;
+                var c = b * a;
+                document.write(b + "*" + a + "=" + c+ "<br>");
+            }
+        -->
+        <script>
+            var a = 10;
+            var b = 4;
+            var c;
+            do{
+                c = b * a;
+                document.write(b + "*" + a + "=" + c+ "<br>");
+                a++;
+            }while(a<21);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <!--1. html + java : id 중복, 오타
+        2. form + html + java
+        3. javasctipt 함수
+        4. 코드 작성시 위, 아래 작성위치
+        5. 결과값 출력 위치 (innerHTML, innerText) - 부모기준으로 작성-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>java + html 34</title>
+        <!--응용문제34. 회원가입 시 약관에 대한 동의를 받는 부분입니다.
+            전체 약관 동의에 체크시 3개의 약관 부분에 동의함으로 모두 체크되어야 하며
+            체크 해제시 모든 약관에 동의안함으로 체크되어야합니다.
+            단, 처음 실행시 동의안함으로 체크되도록 하세요.
+            --> 
+        <script>
+            function abc(){
+                var a = document.getElementById("allck").checked;
+                if(a==true){//전체동의
+                    document.write(b).checked==true;
+                }
+                else{
+                    document.write(c).checked==false;
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <p>전체 약관 모두 동의<input type="checkbox" id="allck" onclick="abc();"></p>
+        <p>네이버 이용약관 동의</p>
+        <input type="radio" name="a" class="ck" id="a0"><label for="a0">동의함</label>
+        <input type="radio" name="a" class="ck2" id="b0" checked><label for="b0">동의 안함</label>
+        <br>
+        <p>개인정보 수집 및 이용약관 동의</p>
+        <input type="radio" name="b" class="ck" id="a1"><label for="a1">동의함</label>
+        <input type="radio" name="b" class="ck2" id="b1" checked><label for="b1">동의 안함</label>
+        <br>
+        <p>위치정보 이용약관 동의</p>
+        <input type="radio" name="c" class="ck" id="a2"><label for="a2">동의함</label>
+        <input type="radio" name="c" class="ck2" id="b2" checked><label for="b2">동의 안함</label>
+    </body>
+    
+</html>
+<!--집가서 해보기-->

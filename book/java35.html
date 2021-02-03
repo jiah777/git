@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <!--1. 입력사항을 검토(자릿수) - if문
+        2. 대표자명 if
+        3. method, action, submit();
+        4. get url data(파라미터) - 가공
+        5. location.search
+        6. 가공형태 split, substr
+        7. input type="hidden"-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>Step Page 제작</title>
+        <!--page1. 패스워드를 재입력하는 페이지 입니다. 
+            패스워드 재 입력시 기본정보를 확인하게 됩니다. 정보 보안 체크는 필수 사항이며,
+            미체크시 get 해당 url 보낼수 없습니다.
+            snumber1,snumber2 모두 숫자만 입력
+            snumber1 : 6자리 숫자 모두 입력
+            snumber2 : 7자리 숫자 모두 입력
+            대표자 명에는 대표자 이름이 입력되어야 함.
+            필수 데이터 : 134327 - 3400678
+            대표자명 : hong
+            --> 
+        <script>
+            function abc(){
+                var ck = document.getElementById("agree").checked; //체크박스
+                var a = document.getElementById("num1").value; //사업자1
+                var aa = a.length; //사업자 숫자수
+                var aaa = typeof(a);
+                var b = document.getElementById("num2").value; //사업자2
+                var bb = b.length;
+                var bbb = typeof(b);
+                var c = document.getElementById("ceo").value; //대표자
+                if(ck==false){
+                    alert("체크사항에 체크해주세요.");
+                }
+
+                if(a=="" || b==""){
+                    alert("사업자번호를 입력하세요.");
+                }
+                else{
+                    if(aa<6 || bb<7){
+                        alert("사업자번호 앞자리 6자리, 뒷자리 7자리 입력해 주세요.");
+                    }
+                    else{
+                        if(c==""){
+                            alert("대표자를 입력하세요.");
+                        }
+                        else {
+                        f.method = "GET";
+                        f.action = "http://reserver1.dothome.co.kr/book/java36.html";
+                        f.submit();
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="f" id="f">
+            <input type="checkbox" name="agree" id="agree"><label for="agree">정보 보안 암호화</label>
+            <br>
+            <!--사업자번호-->
+            <input type="text" name="snumber1" id="num1" maxlength="6" placeholder="사업자 번호 앞자리">
+            -
+            <input type="text" name="snumber2" id="num2"  maxlength="7" placeholder="사업자 번호 뒷자리">
+            <!--대표자-->
+            <br>
+            <input type="text" name="sname" id="ceo" placeholder="대표자명">
+            <br>
+            <input type="button" value="패스워드 찾기" onclick="abc();">
+        </form>
+    </body>
+</html>
+<!--사업자 번호를 문자로 썼을때 -->

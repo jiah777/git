@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <!--1. html + java : id 중복, 오타
+        2. form + html + java
+        3. javasctipt 함수
+        4. 코드 작성시 위, 아래 작성위치
+        5. 결과값 출력 위치 (innerHTML, innerText) - 부모기준으로 작성-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>java + html 31</title>
+        <!--응용문제31. 이메일 회신 정보를 입력하게 됩니다.
+            단, 사용자가 직접 입력할 수는 없습니다.
+            해당 메일 회사를 선택하고 선택된 값이 input에 적용되도록 하세요.
+        -->
+        <script>
+            function abc(zz){
+                var a = document.getElementById("text").value=zz; //= : 값을 넘겨라
+
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="text" readonly>
+        <select onchange="abc(this.value);">
+            <option>[이메일 주소]</option>
+            <option value="http://nate.com">nate.com</option>
+            <option value="http://naver.com">naver.com</option>
+            <option value="http://nate.com">gmail.com</option>
+            <option value="http://nate.com">hanmail.com</option>
+        </select>
+    </body>
+</html>
+<!--select 사용시 onchange 사용
+option에는 value값이 들어가야함.-->

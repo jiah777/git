@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>HTML&CSS 14</title>
+    <style>
+    body{margin: 0; padding: 0;}
+    div {width: 100px; height: 100px;}
+    .black {width: 400px; height: 100px; border: 2px solid black; margin: 2px; overflow: hidden; 
+        position: relative; padding: 5px; box-sizing: border-box;}
+    .red {background-color: red; position: absolute; z-index: 3;}
+    .green {background-color:green; margin: 10px; position: absolute; left: 40px; top: 40px; z-index: 2;}
+    .blue {background-color: blue;  position: absolute; left: 80px; top: 80px; z-index: 1;}
+    </style>
+    </head>
+    <body>
+        <!--응용문제14. 다음 오브젝트 형태처럼 나오도록 퍼블리싱 하세요. 외곽선 : 2px
+            redbox : 100*100  greenbox : 100*100  blue : 100*100  black : 400*100
+        -->
+        <!--z-index : 오브젝트가 겹쳐 있을 때 상단에 먼저 나오는 우선순위-->
+        <!--box-sizing: border-box; : padding 이나 border를 쓸때 사이즈 잡아주기 위해 사용-->
+        <div class="black">
+            <div class="red"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+        </div>
+    </body>
+</html>

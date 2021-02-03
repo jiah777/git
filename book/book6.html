@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>HTML 6</title>
+    </head>
+    <body>
+        <!--응용문제6. 해당 선택 내용 중 순대가 가장 먼저 체크되어야 하며, 입력사항 클릭시 순대집, 순대볶음이 나오도록 합니다.
+        김밥, 떡볶이, 순대, 오뎅-->
+        <!--먼저 체크되어있어야하는 항목은 selected 넣어야함.-->
+        <!--datalist 사용시 input type"text' list값 주고 동일한 id 값을 넣어줘야함.-->
+        <select>
+            <option>김밥</option>
+            <option>떡볶이</option>
+            <option selected>순대</option>
+            <option>오뎅</option>
+        </select><br>
+        <input type="text" list="a">
+        <datalist id="a">
+            <option>순대집</option>
+            <option>순대볶음</option>
+        </datalist>
+    </body>
+</html>

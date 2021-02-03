@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <!--1. html + java : id 중복, 오타
+        2. form + html + java
+        3. javasctipt 함수
+        4. 코드 작성시 위, 아래 작성위치
+        5. 결과값 출력 위치 (innerHTML, innerText) - 부모기준으로 작성-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>java + html 32</title>
+        <!--응용문제32. 읽기전용 부분에는 4개의 난수번호가 출력이 됩니다.
+            사용자는 해당 난수번호와 동일하게 입력시 "정상적으로 인증되었습니다."라고
+            경고메세지를 출력하시고 동일하지 않을 경우 "인증번호가 다릅니다."라고 출력하세요.
+            힌트 : random
+            난수번호 : 0~9까지 출력
+            숫자를 문자로 바꾸는것 : 
+            var a = 5;
+            var b = 9;
+            var c = a +""+ b;
+            alert(c);
+            --> 
+        <script>
+                function abc(){
+                var a = document.getElementById("text2").value;
+                if(a!=total){
+                   alert("인증번호가 다릅니다.");
+                }
+                else {
+                  alert("인증번호가 정상적으로 처리되었습니다.");
+                }   
+                }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="text" readonly>
+        <input type="text" id="text2">
+        <input type="button" value="인증" onclick="abc();">
+    </body>
+    <script>
+        var bb = Math.ceil(Math.random()*9);
+        var cc = Math.ceil(Math.random()*9);
+        var dd = Math.ceil(Math.random()*9);
+        var ee = Math.ceil(Math.random()*9);
+        var total = bb + "" + cc + "" + dd + "" + ee;
+        document.getElementById("text").value=total;
+    </script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+    <title>array배열6</title>
+    <script>
+
+        var array =[
+            ["red","빨강",1],
+            ["blue","파랑",2],
+            ["green","녹색",3],
+            ["yellow","노랑",4],
+            ["pink","분홍",5],
+            ["black","검정",6]
+        ];
+        
+        
+        function abc(az){
+            var arraynum = array.length;
+            var a = document.getElementById("box");
+            var aa;
+            for(aa=0;aa<arraynum;aa++){
+                //document.write(array[aa][0]+"<br>");
+                if(array[aa][2]==az){  //div onclick에 5번째 지정 //배열 == 5 번째 일때
+                    a.style.backgroundColor = array[aa][0]; //pink 를 배경색으로 
+                }
+            }
+        }
+    </script>
+    <style>
+        #box {width: 100px; height: 100px; background-color: purple;}
+    </style>
+</head>
+<body>
+    <div id="box" onclick="abc(5);"></div>
+</body>
+</html>

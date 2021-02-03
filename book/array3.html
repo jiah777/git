@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+    <title>array배열3</title>
+    <script>
+        var array =[
+            ["red","빨강"],
+            ["blue","파랑"],
+            ["green","녹색"],
+            ["yellow","노랑"],
+            ["pink","분홍"],
+            ["black","검정"]
+        ]
+        var arraynum = array.length; //갯수
+        var a;
+        var color = "white";
+        var ck = "1" //임시변수
+        for(a=0;a<arraynum;a++){
+            if(color==array[a][0]){
+                alert("해당색상이 있습니다.");
+                ck = "";
+            }            
+            //document.write(array[a][0] = "<br>");
+        }
+        if(ck=="1"){
+            alert("해당 색상이 없습니다.");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+<!--return : function onsubmit 생성해야 사용가능.-->

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <!--1. 문법을 먼저 작성하지 않기
+        2. 문제해석
+        3. 반복문 / 조건문(if) / 선택문(switch) 써야하는지 확인-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>java 21</title>
+        <!--응용문제21. 다음과 같이 데이터가 존재합니다. 고객 데이터는 다음과 같습니다.
+            "홍길동""이순신""강감찬""유관순""유리왕""김구"
+            해당 사용자만 출력하세요.
+            출력결과 : 강감찬 유리왕
+        -->
+        <script>
+            var a = ["홍길동","이순신","강감찬","유관순","유리왕","김구"];
+            var b = a.length; //갯수 6개
+            var c; //for문 시작값 (0~5)
+            
+            for(c=0;c<b;c++){
+                var d = c % 2; //짝수인지 홀수인지를 파악하기 위한 수
+                if(d==0 && c>0){ //d==0 짝수(노드 라서 0부터 시작) c>0 노드0보다 큰수가 일치할때
+                    document.write(a[c]+"<br>");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

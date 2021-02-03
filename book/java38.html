@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <!--1.CrossDomain
+        http://www.abc.co.kr
+        http://abc.co.kr
+        http://m.abc.co.kr
+        : 다 다른 주소 - crossdomain error
+
+        <해결방법>
+        - server에서 강제 도메인 공용화(http://www.naver > http://naver.com)
+        - back-end에서 Json 파일로 디코딩 
+        (부모창에서 자식창으로 팝업 open > 부모창에 있는 도메인을 강제로 데이터화 시킴.)
+        - javascript > 쿠키값을 생성 > section으로 검토
+        -->
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+            <title>자식창 데이터 받기</title>
+            <script>
+            function idcheck(){
+            var a = document.getElementById("mid").value;      
+            window.open("./java38_1.html?mid="+a,"","width=500 height=500");        
+            }
+            </script>
+        </head>
+        <body>
+            <form name="idck" id="idck">
+                <input type="text" name="mid" id="mid">
+                <input type="button" value="중복체크" onclick="idcheck();">
+            </form>
+        </body>
+    </html>

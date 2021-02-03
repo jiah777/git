@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+    <title>array배열</title>
+    <script>
+        /*분홍 검정 없애기*/
+        var array = [
+            ["red","빨강"],
+            ["blue","파랑"],
+            ["green","녹색"],
+            ["yellow","노랑"],
+            ["pink","분홍"],
+            ["black","검정"]
+        ];
+        var arraynum = array.length;
+        var f;
+        for(f=0;f<arraynum;f++){
+            if(array[f][1]!="분홍" && array[f][1]!="검정"){
+                document.write(array[f][1]+"<br>");//배열[배열수][두번째]
+            
+
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

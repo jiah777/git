@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <!--1. 문법을 먼저 작성하지 않기
+        2. 문제해석
+        3. 반복문 / 조건문(if) / 선택문(switch) 써야하는지 확인-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>java 15</title>
+        <!--응용문제15. 변수값 a에 22라는 숫자를 입력합니다.단 22라는 숫자가 문자인지 숫자인지 확인후 
+            22~1까지 내림차순으로 출력을 하시고 문자일 경우 "해당 값은 문자값 입니다."라고 경고메세지를 출력하세요.
+            힌트 : typeof
+        -->
+        <script>
+            var a = 22;
+            var b = typeof(a);
+            /*
+            if(b=="string"){ //문자
+                alert("해당값은 문자값 입니다.");
+            }
+            else { //숫자
+                for(b=22;b>0;b--){
+                document.write(b + "<br>");
+                }
+            }*/
+            if(isNaN(a)==true){ //a가 숫자가 아닌게 맞아?
+                alert("해당값은 문자값 입니다.");
+            }
+            else{
+                for(a=22;a>0;a--){
+                document.write(b + "<br>");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

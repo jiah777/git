@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <!--1. html + java : id 중복, 오타
+        2. form + html + java
+        3. javasctipt 함수
+        4. 코드 작성시 위, 아래 작성위치
+        5. 결과값 출력 위치 (innerHTML, innerText) - 부모기준으로 작성-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>java + html 26</title>
+        <!--
+            function abc(){ //기본함수틀 값을 주고받고할때 사용.              
+                bbb();//변수 bbb로 묶어야 return으로 받을 수 있음.
+            }
+            abc(); //강제 함수실행
+            function bbb(){
+                return
+            }
+
+            var a = document.querySelector("#a");
+            a.onclick=function(){ //선언핸들링
+                alert("test");
+            }-->
+        <!--
+            <from name="" id="" method="">
+                //method=""  - 파라미터값 : get
+               //name은 라디오 외에 중복 x
+            </from>
+    
+            <input type="button" value="연습" id="a">-->
+
+        <!--응용문제26. 버튼 클릭시 구구단 5단을 출력하세요.
+        -->
+        <script>
+            function abc(){
+                var a = 5;
+                var b;
+                var c;
+                for(b=1;b<10;b++){
+                    c = a * b;
+                    document.write(a + "*" + b + "=" + c + "<br>");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="확인" onclick="abc();">
+    </body>
+</html>

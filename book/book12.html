@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>HTML&CSS 12</title>
+        <style>
+            body {margin: 0; padding: 0;}
+            ul {width: 1000px; height: 30px; margin: 0 auto; 
+                list-style: none; text-align: center; line-height: 30px;}
+            ul > li {width: 100px; height: 30px; float: left;}
+            ul > li:first-child {background-color: gray; border-radius: 10px 0 0 10px;}
+            ul > li:nth-child(2n+2) {background-color: green;}
+            /**ul > li:nth-child(2n) {background-color: green;}**/
+            ul > li:nth-child(3n+3) {background-color: red;}
+            ul > li:nth-child(5n+5) {background-color: blue;}
+            ul > li:last-child {border-radius: 0 10px 10px 0;}
+        </style>
+    </head>
+    <body>
+        <!--응용문제12. html메뉴를 제작합니다. 메뉴는 총 10개이며 각 메뉴별로 색상이 적용됩니다.
+            menu1,menu10은 모서리 10px 적용. 각 색상에 맞춰 출력하세요.
+            menu1 : gray  menu2,menu4,menu8 : green  menu3,menu6,menu9 : red
+            menu5, menu10 : blue
+        -->
+        <!--ul은 border-radius 가 적용이 안됨.
+            ul > li:nth-child(2n) : 점핑노드-->
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+            <li>menu6</li>
+            <li>menu7</li>
+            <li>menu8</li>
+            <li>menu9</li>
+            <li>menu10</li>
+        </ul>
+    </body>
+</html>

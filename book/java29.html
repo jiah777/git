@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <!--1. html + java : id 중복, 오타
+        2. form + html + java
+        3. javasctipt 함수
+        4. 코드 작성시 위, 아래 작성위치
+        5. 결과값 출력 위치 (innerHTML, innerText) - 부모기준으로 작성-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>java + html 29</title>
+        <!--응용문제29.  사용자가 연락처를 입력하게 됩니다.tel1- tel3까지 name값을 backend로 넘겨야 합니다.
+            단, 숫자 외에는 절대 값이 넘어가면 안됩니다. 그리고 해당 값은 get 으로 넘기세요.
+            get url : http://reduck.dothome.co.kr/book/java29.php
+        -->
+        <script>
+            function abc(){
+                var a = aa.tel1.value;
+                var b = aa.tel2.value;
+                var c= aa.tel3.value;
+                if(isNaN(a)==true && isNaN(b)==true && isNaN(c)==true){ //숫자입력
+                    alert("숫자만 입력하세요.");
+                    return false;
+                }
+                else {
+                    aa.method = "GET";
+                    aa.action = "http://reduck.dothome.co.kr/book/java29.php";
+                    aa.submit();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="aa" id="aa">
+            <input type="text" name="tel1" class="tels">
+            <input type="text" name="tel2" class="tels">
+            <input type="text" name="tel3" class="tels">
+            <input type="button" value="전화번호 전송" onclick="abc();">
+        </form>
+    </body>
+</html>
+<!--class는 name id 값 다르고 가져와야하는 양이 많을때 사용-->
+<!-- name id 값 다른데 반복적으로 쓰고 싶음.-->

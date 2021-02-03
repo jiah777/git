@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <!--1. 문법을 먼저 작성하지 않기
+        2. 문제해석
+        3. 반복문 / 조건문(if) / 선택문(switch) 써야하는지 확인-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>java 24</title>
+        <!--Math.random & switch-->
+        <!--응용문제24. 1~10까지 숫자 중 무작위 숫자 한개를 선택합니다. 그 중에서 
+            1 : 할인쿠폰 10%할인 
+            2 : 할인쿠폰 20%할인
+            3 : 택배비 무료
+            4 : 1+1 상품입니다.
+            5 : 할인쿠폰 50%할인
+            나머지 숫자는 ""다음기회에" 라고 경고메세지 출력합니다.
+        -->
+        <script>
+         var a = Math.floor(Math.random()*9)+1; //Math.random : 무작위로 나오게 하는 수 
+         //Math.floor() : 소수점 이하를 버림한다.   //Math.ceil() : 소수점 이하를 올림한다.   //Math.round() : 소수점 이하를 반올림한다.
+            alert(a);
+            switch(a){
+                case 1:
+                document.write("할인쿠폰 10% 할인");
+                break;
+
+                case 2:
+                document.write("할인쿠폰 20% 할인");
+                break;
+
+                case 3:
+                document.write("택배비 무료");
+                break;
+
+                case 4:
+                document.write("1+1 상품입니다.");
+                break;
+
+                case 5:
+                document.write("할인쿠폰 50%할인");
+                break;
+
+                default:
+                document.write("다음기회에");
+                break;
+                
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

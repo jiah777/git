@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>HTML&CSS 10</title>
+        <style>
+            body {margin: 0; padding: 0;}
+            ul {width: 100%; height: 250px; list-style: none; margin: 0; padding: 0;}
+            ul > li {width: 200px; height: 250px; margin: 0; padding: 0; display: inline-block; background-size:cover; 
+                background-repeat: no-repeat;}
+            ul > li:nth-child(1) { border: 3px solid red; 
+                background-image: url(http://reduck.dothome.co.kr/image/img1.png);}
+            ul > li:nth-child(2) {border: 3px solid green; 
+                background-image: url(http://reduck.dothome.co.kr/image/img2.jpg);}
+            ul > li:nth-child(3) {border: 3px solid blue; 
+                background-image: url(http://reduck.dothome.co.kr/image/img3.gif);}
+        </style>
+    </head>
+    <body>
+        <!--응용문제10. 해당 상품 이미지를 다음과 같이 리스트로 출력하세요. 단, 외곽선 두께는 3px 입니다.
+        그 외에 각 이미지 크기는 200*250 이며, red,green,blue 색상을 가지고 있습니다. 각 상품별로 여백 공간이 필요합니다.
+        http://reduck.dothome.co.kr/image/img1.png
+        http://reduck.dothome.co.kr/image/img2.jpg
+        http://reduck.dothome.co.kr/image/img3.gif-->
+        
+        <!--background-size:cover; : 사각형 사이즈에 맞게 이미지가 조절
+        display:inline-block 사용시 float:left 사용X-->
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </body>
+</html>

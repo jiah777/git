@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <!--1. 문법을 먼저 작성하지 않기
+        2. 문제해석
+        3. 반복문 / 조건문(if) / 선택문(switch) 써야하는지 확인-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>java 7</title>
+        <!--응용문제7. 사용자가 아이디를 입력하였습니다.최소 5자 이상 10자 이하만 입력받도록
+            합니다. 변수 a값은 "kor" 이라고 입력했습니다. 
+            5자 이하일 경우 경고 메세지는 "최소 5자 이상입니다."라고 출력하시고,
+            10자 이상일 경우 경고 메세지는 "최대 10자 이하입니다. "라고 출력
+        -->
+        <script>
+            var a = "kor";
+            var b = a.length; //문자면 length 입력
+            if(b<5){
+                alert("최소 5자 이상입니다.");
+            }  
+            else if(b>10){
+                alert("최대 10자 이하 입니다.");
+            }
+            else {
+                alert("아이디를 입력해주세요.");
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

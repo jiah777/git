@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <!--1. html + java : id 중복, 오타
+        2. form + html + java
+        3. javasctipt 함수
+        4. 코드 작성시 위, 아래 작성위치
+        5. 결과값 출력 위치 (innerHTML, innerText) - 부모기준으로 작성-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=Edge, chrome=1">
+        <title>java + html 27</title>
+        <!--응용문제27. 버튼 클릭시 사용자가 입력한 숫자 또는 문자를 확인하여 숫자로 확인된 것중
+            해당 값에 대한 구구단을 출력하세요.
+            힌트 : Number(); isNaN
+        -->
+        <script>
+            function abc(){
+                var a = Number(document.getElementById("a").value); //숫자로 text id값을 가져오기 //Number : not a number
+                var b;
+                var c;
+                if(isNaN(a)==true){ //isNaN : number 가 nan으로 출력이 되었는지 물어봄.
+                    alert("숫자만 입력하세요.");
+                }
+                else {
+                    for(b=1;b<10;b++){
+                        c = a * b;
+                        document.write(a + "*" + b + "=" + c + "<br>");
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="a">
+        <input type="button" value="확인" onclick="abc();">
+    </body>
+</html>
